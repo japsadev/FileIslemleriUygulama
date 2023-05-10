@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FileIslemleriUygulama" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qyY-3D-DZu">
+                                <rect key="frame" x="40" y="84" width="312" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hY-Lp-0fC">
+                                <rect key="frame" x="40" y="150" width="75" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="4hc-gx-7El"/>
+                                    <constraint firstAttribute="width" constant="75" id="IsO-h4-GA6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Yaz"/>
+                                <connections>
+                                    <action selector="yaz:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ylB-OS-fgU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gpe-Ig-ZrE">
+                                <rect key="frame" x="159" y="150" width="74" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Oku"/>
+                                <connections>
+                                    <action selector="oku:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mae-6m-etJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ViN-UE-9Yg">
+                                <rect key="frame" x="277" y="150" width="75" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Sil"/>
+                                <connections>
+                                    <action selector="sil:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HTF-0v-NPa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Lq-hu-neu">
+                                <rect key="frame" x="31" y="220" width="93" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="qhk-iz-h6R"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Resim Kaydet"/>
+                                <connections>
+                                    <action selector="resimKaydet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cyH-6s-0J8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mmo-Ef-Ak5">
+                                <rect key="frame" x="277" y="219" width="75" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Resim Sil"/>
+                                <connections>
+                                    <action selector="resimSil:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5M7-iG-4nM"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="resim" translatesAutoresizingMaskIntoConstraints="NO" id="KDA-wa-dbX">
+                                <rect key="frame" x="36" y="306" width="320" height="512"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kLP-ue-ib9">
+                                <rect key="frame" x="144" y="220" width="105" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Resim Göster"/>
+                                <connections>
+                                    <action selector="resimGoster:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RwQ-cW-dyD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7hY-Lp-0fC" firstAttribute="baseline" secondItem="gpe-Ig-ZrE" secondAttribute="firstBaseline" id="3MG-QV-81t"/>
+                            <constraint firstItem="4Lq-hu-neu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="31" id="3pB-qy-C0q"/>
+                            <constraint firstItem="ViN-UE-9Yg" firstAttribute="trailing" secondItem="Mmo-Ef-Ak5" secondAttribute="trailing" id="6Bv-cs-sxN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qyY-3D-DZu" secondAttribute="trailing" constant="40" id="6ao-Xc-hmA"/>
+                            <constraint firstItem="gpe-Ig-ZrE" firstAttribute="centerX" secondItem="KDA-wa-dbX" secondAttribute="centerX" id="6pi-ma-joA"/>
+                            <constraint firstItem="4Lq-hu-neu" firstAttribute="top" secondItem="kLP-ue-ib9" secondAttribute="top" id="71w-cU-5m7"/>
+                            <constraint firstItem="gpe-Ig-ZrE" firstAttribute="top" secondItem="ViN-UE-9Yg" secondAttribute="top" id="82T-kK-GfQ"/>
+                            <constraint firstItem="kLP-ue-ib9" firstAttribute="leading" secondItem="4Lq-hu-neu" secondAttribute="trailing" constant="20" id="8Ps-vD-ElH"/>
+                            <constraint firstItem="4Lq-hu-neu" firstAttribute="baseline" secondItem="kLP-ue-ib9" secondAttribute="baseline" id="Ab1-Hz-czR"/>
+                            <constraint firstItem="KDA-wa-dbX" firstAttribute="top" secondItem="4Lq-hu-neu" secondAttribute="bottom" constant="50" id="B66-89-41S"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KDA-wa-dbX" secondAttribute="trailing" constant="37" id="FB9-Oh-dFG"/>
+                            <constraint firstItem="qyY-3D-DZu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="HeV-PJ-JlK"/>
+                            <constraint firstItem="Mmo-Ef-Ak5" firstAttribute="baseline" secondItem="kLP-ue-ib9" secondAttribute="firstBaseline" constant="-1" id="HwP-ru-pKe"/>
+                            <constraint firstItem="7hY-Lp-0fC" firstAttribute="centerX" secondItem="4Lq-hu-neu" secondAttribute="centerX" id="Ltz-wJ-DUZ"/>
+                            <constraint firstItem="gpe-Ig-ZrE" firstAttribute="centerX" secondItem="kLP-ue-ib9" secondAttribute="centerX" id="MDR-rn-Rtv"/>
+                            <constraint firstItem="7hY-Lp-0fC" firstAttribute="top" secondItem="qyY-3D-DZu" secondAttribute="bottom" constant="23" id="S8J-2z-dKY"/>
+                            <constraint firstItem="kLP-ue-ib9" firstAttribute="top" secondItem="Mmo-Ef-Ak5" secondAttribute="top" constant="1" id="S9E-dA-0ti"/>
+                            <constraint firstItem="qyY-3D-DZu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="Sxr-hU-tgg"/>
+                            <constraint firstItem="gpe-Ig-ZrE" firstAttribute="baseline" secondItem="ViN-UE-9Yg" secondAttribute="firstBaseline" id="VSY-pQ-S77"/>
+                            <constraint firstItem="KDA-wa-dbX" firstAttribute="top" secondItem="4Lq-hu-neu" secondAttribute="bottom" constant="50" id="a1r-Ib-cud"/>
+                            <constraint firstItem="ViN-UE-9Yg" firstAttribute="trailing" secondItem="qyY-3D-DZu" secondAttribute="trailing" id="aOI-PA-ReZ"/>
+                            <constraint firstItem="7hY-Lp-0fC" firstAttribute="leading" secondItem="qyY-3D-DZu" secondAttribute="leading" id="cDq-mm-Aoy"/>
+                            <constraint firstItem="ViN-UE-9Yg" firstAttribute="leading" secondItem="Mmo-Ef-Ak5" secondAttribute="leading" id="gyr-Gb-fUQ"/>
+                            <constraint firstItem="KDA-wa-dbX" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="hn3-nm-is6"/>
+                            <constraint firstItem="Mmo-Ef-Ak5" firstAttribute="leading" secondItem="kLP-ue-ib9" secondAttribute="trailing" constant="28" id="j2X-NO-lnh"/>
+                            <constraint firstItem="gpe-Ig-ZrE" firstAttribute="leading" secondItem="7hY-Lp-0fC" secondAttribute="trailing" constant="44" id="k0s-Wh-w6t"/>
+                            <constraint firstItem="gpe-Ig-ZrE" firstAttribute="centerX" secondItem="qyY-3D-DZu" secondAttribute="centerX" id="qgY-zA-VJL"/>
+                            <constraint firstItem="4Lq-hu-neu" firstAttribute="top" secondItem="7hY-Lp-0fC" secondAttribute="bottom" constant="34" id="rYR-Ze-aex"/>
+                            <constraint firstItem="kLP-ue-ib9" firstAttribute="baseline" secondItem="Mmo-Ef-Ak5" secondAttribute="firstBaseline" constant="1" id="tvm-tS-qRf"/>
+                            <constraint firstItem="KDA-wa-dbX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="36" id="uHw-14-YNU"/>
+                            <constraint firstItem="7hY-Lp-0fC" firstAttribute="top" secondItem="gpe-Ig-ZrE" secondAttribute="top" id="vr3-kK-O0e"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="resimTutucu" destination="KDA-wa-dbX" id="l7N-zq-VHA"/>
+                        <outlet property="textfieldGirdi" destination="qyY-3D-DZu" id="Q0p-A2-CJy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="resim" width="512" height="512"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
